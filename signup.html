@@ -43,9 +43,41 @@
                 <label class="block text-sm text-gray-500 mb-1">Password</label>
                 <input type="password" id="password" class="w-full p-4 border border-gray-300 rounded-lg mb-5 text-sm">
 
-                <button class="w-full p-4 bg-blue-600 text-white rounded-lg text-base cursor-pointer hover:bg-blue-700">Continue</button>
+                <button class="btn-continue w-full p-4 bg-blue-600 text-white rounded-lg text-base cursor-pointer hover:bg-blue-700">Continue</button>
             </div>
         </div>
     </div>
+
+<script>
+    document.querySelector('.btn-continue').addEventListener('click', async () => {
+        const fullname = document.getElementById('fullname').value;
+        const email = document.getElementById('email').value;
+        const gender = document.getElementById('gender').value;
+        const dateOfBirth = document.getElementById('dateOfBirth').value;
+        const password = document.getElementById('password').value;
+
+        try {
+            const response = await fetch('http://localhost:3000/api/auth/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ fullname, email, password, gender, dateOfBirth })
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                alert('Dang ky thanh cong!');
+                window.location.href = 'login.html';
+            } else {
+                alert(data.message);
+            }
+
+        } catch (error) {
+            alert('Loi ket noi server');
+        }
+    });
+</script>
 </body>
 </html>
