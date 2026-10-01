@@ -1,0 +1,30 @@
+{
+  "name": "food-ordering-backend-nodejs-crud-rest-api-v1.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/devcamp120.j2605/exercise/canhvt/1.10.2026/food-ordering-backend-nodejs-crud-rest-api-v1.0.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://gitlab.com/devcamp120.j2605/exercise/canhvt/1.10.2026/food-ordering-backend-nodejs-crud-rest-api-v1.0/issues"
+  },
+  "homepage": "https://gitlab.com/devcamp120.j2605/exercise/canhvt/1.10.2026/food-ordering-backend-nodejs-crud-rest-api-v1.0#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mysql2": "^3.24.5",
+    "sequelize": "^6.37.8"
+  }
+}
