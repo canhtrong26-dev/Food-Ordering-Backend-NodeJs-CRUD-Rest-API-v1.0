@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+    <div class="flex h-screen">
+        <!-- Nửa trái -->
+        <div class="w-1/2 bg-blue-600 flex items-center justify-center relative">
+            <div class="absolute top-8 left-10 text-white text-2xl font-bold">Logo</div>
+            <lottie-player
+                src="https://assets9.lottiefiles.com/packages/lf20_3ueg3po6.json"
+                background="transparent"
+                speed="1"
+                style="width: 400px; height: 400px;"
+                loop
+                autoplay>
+            </lottie-player>
+        </div>
+
+        <!-- Nửa phải -->
+        <div class="w-1/2 flex items-center justify-center">
+            <div class="w-[400px]">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Account Signup</h2>
+                <p class="text-sm text-gray-500 mb-8">Become a member and enjoy exclusive promotions.</p>
+
+                <label class="block text-sm text-gray-500 mb-1">Full Name</label>
+                <input type="text" id="fullname" class="w-full p-4 border border-gray-300 rounded-lg mb-5 text-sm">
+
+                <label class="block text-sm text-gray-500 mb-1">Email Address</label>
+                <input type="email" id="email" class="w-full p-4 border border-gray-300 rounded-lg mb-5 text-sm">
+
+                <label class="block text-sm text-gray-500 mb-1">Gender</label>
+                <input type="text" id="gender" class="w-full p-4 border border-gray-300 rounded-lg mb-5 text-sm">
+
+                <label class="block text-sm text-gray-500 mb-1">Date Of Birth</label>
+                <input type="text" id="dateOfBirth" class="w-full p-4 border border-gray-300 rounded-lg mb-5 text-sm">
+
+                <label class="block text-sm text-gray-500 mb-1">Password</label>
+                <input type="password" id="password" class="w-full p-4 border border-gray-300 rounded-lg mb-5 text-sm">
+
+                <button class="w-full p-4 bg-blue-600 text-white rounded-lg text-base cursor-pointer hover:bg-blue-700">Continue</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
