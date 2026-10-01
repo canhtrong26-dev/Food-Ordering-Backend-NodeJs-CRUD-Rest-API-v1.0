@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Thư viện Lottie để chạy ảnh động -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+    <div class="flex h-screen">
+        <!-- Nửa trái -->
+        <div class="w-1/2 bg-blue-600 flex items-center justify-center relative">
+            <div class="absolute top-8 left-10 text-white text-2xl font-bold">Logo</div>
+            <lottie-player
+                src="https://assets9.lottiefiles.com/packages/lf20_3ueg3po6.json"
+                background="transparent"
+                speed="1"
+                style="width: 400px; height: 400px;"
+                loop
+                autoplay>
+            </lottie-player>
+        </div>
+
+        <!-- Nửa phải -->
+        <div class="w-1/2 flex items-center justify-center">
+            <div class="w-[400px]">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Account Login</h2>
+                <p class="text-sm text-gray-500 mb-8">If you are already a member you can login with your email address and password.</p>
+
+                <label class="block text-sm text-gray-500 mb-1">Email address</label>
+                <input type="email" id="email" class="w-full p-4 border border-gray-300 rounded-lg mb-5 text-sm">
+
+                <label class="block text-sm text-gray-500 mb-1">Password</label>
+                <input type="password" id="password" class="w-full p-4 border border-gray-300 rounded-lg mb-5 text-sm">
+
+                <div class="flex items-center gap-2 mb-6">
+                    <input type="checkbox" id="remember" checked class="w-5 h-5">
+                    <label for="remember" class="text-sm text-gray-800">Remember me</label>
+                </div>
+
+                <button class="w-full p-4 bg-blue-600 text-white rounded-lg text-base cursor-pointer hover:bg-blue-700">Register Account</button>
+
+                <p class="text-center mt-5 text-sm text-gray-500">
+                    Dont have an account ? <a href="signup.html" class="text-blue-600 hover:underline">Sign up here</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
